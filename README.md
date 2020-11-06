@@ -1,2 +1,2 @@
-# myweb
-sitio que contiene información de mis habilidades tecnicas , y resumen
+# myweb (catalan-it)
+Sitio que contiene información de mis habilidades tecnicas, proyectos y resumen.
