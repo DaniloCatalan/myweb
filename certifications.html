@@ -53,18 +53,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <ul>
-                                    <li>Developing Windows Applications with Microsoft Visual Studio 2010 MS10262 – Teachtraining</li>
-                                    <li>Maintaining a Microsoft SQL Server 2008 Data Base MS6231 – Quintec</li>
-                                    <li>Implementing a Microsoft SQL Server 2008 Data Base MS6232 – Quintec</li>
-                                    <li>Implementing and Maintaining MS.SQL Server 2008 Integration Services & Analysis Services MS6234/MS6235 – Quintec</li>
-                                    <li>Imp. and Maintaining Microsoft SQL Server 2008 Reporting Services MS6236 – Quintec</li>
+                                    <li v-for="(course, index) in getCourses('Tecnologicos', 1)" :key="index">{{ course.name }} - {{ course.institution }}</li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
                                 <ul>
-                                    <li>Curso en tecnología .NET con Visual Studio 2008 -Trackit</li>
-                                    <li>Metodología Ágil: Scrum + Kanban - EClass</li>
-                                    <li><a href="https://testdanilo.s3.amazonaws.com/Transcript_mva.pdf" target="_blank">Otros Cursos</a></li>
+                                    <li v-for="(course, index) in getCourses('Tecnologicos', 2)" :key="index">{{ course.name }} - {{ course.institution }}</li>
+                                    <li><a href="https://testdanilo.s3.amazonaws.com/Transcript_mva.pdf" target="_blank">Otros Cursos tecnologicos</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -76,8 +71,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <ul>
-                                    <li>Control de Gestión para no especialistas</li>
-                                    <li>Herramientas para la gestión de procesos</li>
+                                    <li v-for="(course, index) in getCourses('Otros', 3)" :key="index">{{ course.name }} - {{ course.institution }}</li>
                                 </ul>
                             </div>
                         </div>
